@@ -1,0 +1,30 @@
+{
+  "overall": {
+    "n_samples": 30422,
+    "n_total_samples": 30514,
+    "accuracy": 0.715238971796726,
+    "ece": 0.1876991020708697,
+    "brier": 0.2258126147624815,
+    "precision": 0.7066134196302544,
+    "recall": 0.9931771992644924,
+    "f1": 0.82573974614286,
+    "sensitivity": 0.9931771992644924,
+    "specificity": 0.12648626486264863,
+    "auroc": 0.7171402426305304,
+    "aucpr": 0.7817596533903245
+  },
+  "metadata": {
+    "model_id": "OpenGVLab/InternVL3_5-14B-HF",
+    "model_name_part": "InternVL3_5-14B-HF",
+    "test_dataset_name": "VLMCE_test_raw",
+    "backend": "vllm",
+    "total_records": 30422,
+    "evaluation_timestamp": "2026-04-16T20:56:00.698864",
+    "confidence_statistics": {
+      "avg_confidence": 0.8642766654657813,
+      "confidence_std": 0.18790874969984164,
+      "min_confidence": 0.0,
+      "max_confidence": 1.0
+    }
+  }
+}

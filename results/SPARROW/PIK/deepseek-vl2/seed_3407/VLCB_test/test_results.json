@@ -1,0 +1,39 @@
+{
+  "overall": {
+    "n_samples": 30513,
+    "n_total_samples": 30513,
+    "accuracy": 0.6984891685511093,
+    "ece": 0.08120178260010585,
+    "brier": 0.18857575278785335,
+    "precision": 0.7159952134024731,
+    "recall": 0.7487634825099815,
+    "f1": 0.732012816778328,
+    "sensitivity": 0.7487634825099815,
+    "specificity": 0.6370521409845616,
+    "auroc": 0.7881026321103412,
+    "aucpr": 0.8507995127674117
+  },
+  "metadata": {
+    "model_name": "deepseek-ai/deepseek-vl2",
+    "model_name_part": "deepseek-vl2",
+    "test_dataset_name": "VLMCE_test_raw",
+    "total_records": 30513,
+    "evaluation_timestamp": "2026-04-15T19:23:44",
+    "pik_statistics": {
+      "avg_confidence": 0.3688359260559082,
+      "confidence_std": 0.25482699275016785,
+      "min_confidence": 7.268855551956221e-05,
+      "max_confidence": 0.959240734577179
+    },
+    "pik_model_info": {
+      "model_path": "trained_models/SPARROW/PIK_t50/deepseek-vl2/seed_3407",
+      "input_dim": 2560,
+      "hidden_layers": [
+        1024,
+        512,
+        256
+      ]
+    },
+    "label_convention_note": "Bundled labels are in the trained classifier's prediction space (label 1 = the class the model treats as positive). This may be the minority class for methods that learn on imbalanced data. AUROC, Brier, and ECE are invariant under flipping; AUCPR and threshold-dependent metrics depend on the chosen positive class. To re-derive metrics under the canonical '1 = correct' semantics, flip ground_truth_correctness \u2194 1 - ground_truth_correctness and confidence_score \u2194 1 - confidence_score, then recompute via utils.eval.calculate_all_metrics."
+  }
+}

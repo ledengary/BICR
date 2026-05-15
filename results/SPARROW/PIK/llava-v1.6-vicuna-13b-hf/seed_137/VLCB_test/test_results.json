@@ -1,0 +1,38 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "n_total_samples": 30514,
+    "accuracy": 0.6489152520154683,
+    "ece": 0.17319205213828662,
+    "brier": 0.2324713207341344,
+    "precision": 0.6583588398192683,
+    "recall": 0.9311002318989952,
+    "f1": 0.7713291639095818,
+    "sensitivity": 0.9311002318989952,
+    "specificity": 0.155999639931587,
+    "auroc": 0.7325644629500991,
+    "aucpr": 0.8498120717080777
+  },
+  "metadata": {
+    "model_name": "llava-hf/llava-v1.6-vicuna-13b-hf",
+    "model_name_part": "llava-v1.6-vicuna-13b-hf",
+    "test_dataset_name": "VLMCE_test_raw",
+    "total_records": 30514,
+    "evaluation_timestamp": "2026-04-15T18:51:08",
+    "pik_statistics": {
+      "avg_confidence": 0.20722244679927826,
+      "confidence_std": 0.19621945917606354,
+      "min_confidence": 5.12698243255727e-05,
+      "max_confidence": 0.9087138175964355
+    },
+    "pik_model_info": {
+      "model_path": "trained_models/SPARROW/PIK_t50/llava-v1.6-vicuna-13b-hf/seed_137",
+      "input_dim": 5120,
+      "hidden_layers": [
+        512,
+        256
+      ]
+    },
+    "label_convention_note": "Bundled labels are in the trained classifier's prediction space (label 1 = the class the model treats as positive). This may be the minority class for methods that learn on imbalanced data. AUROC, Brier, and ECE are invariant under flipping; AUCPR and threshold-dependent metrics depend on the chosen positive class. To re-derive metrics under the canonical '1 = correct' semantics, flip ground_truth_correctness \u2194 1 - ground_truth_correctness and confidence_score \u2194 1 - confidence_score, then recompute via utils.eval.calculate_all_metrics."
+  }
+}

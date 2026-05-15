@@ -1,0 +1,38 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "n_total_samples": 30514,
+    "accuracy": 0.5573179524152848,
+    "ece": 0.16330682492748835,
+    "brier": 0.24885303852796603,
+    "precision": 0.5542987926230596,
+    "recall": 0.9957692766058872,
+    "f1": 0.7121670573194119,
+    "sensitivity": 0.9957692766058872,
+    "specificity": 0.021482668220215554,
+    "auroc": 0.729771163276315,
+    "aucpr": 0.7219268393856193
+  },
+  "metadata": {
+    "model_id": "deepseek-ai/deepseek-vl2",
+    "model_name_part": "deepseek-vl2",
+    "test_dataset_name": "VLMCE_test_raw_PE",
+    "backend": "hf",
+    "num_paraphrases_used": null,
+    "confidence_aggregation": "mean",
+    "total_records": 30514,
+    "evaluation_timestamp": "2026-04-17T16:11:53.609843",
+    "ensemble_confidence_statistics": {
+      "avg_confidence": 0.7132838846377852,
+      "confidence_std": 0.08191819665034421,
+      "min_confidence": 0.29990699710422963,
+      "max_confidence": 0.9838942162918323
+    },
+    "original_confidence_statistics": {
+      "avg_confidence": 0.7090199103270032,
+      "confidence_std": 0.11596559986183462,
+      "min_confidence": 0.05930647626519203,
+      "max_confidence": 0.9953028857707977
+    }
+  }
+}

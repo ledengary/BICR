@@ -1,0 +1,122 @@
+{
+  "splits": {
+    "train": {
+      "unique_hash_ids": 20000,
+      "n_rows": 100000
+    },
+    "validation": {
+      "unique_hash_ids": 5000,
+      "n_rows": 25000
+    },
+    "test": {
+      "unique_hash_ids": 30514,
+      "n_rows": 152568
+    }
+  },
+  "per_source": {
+    "test": {
+      "GMAI-MMBench": 4549,
+      "GQA": 12568,
+      "LLaVA-Wild": 60,
+      "MME-Finance": 892,
+      "MMMU_Pro_10": 1725,
+      "MMMU_Pro_4": 1720,
+      "POPE": 9000
+    }
+  },
+  "per_split_model": {
+    "train": {
+      "InternVL3_5-14B-HF": 20000,
+      "Qwen3-VL-8B-Instruct": 20000,
+      "deepseek-vl2": 20000,
+      "gemma-3-27b-it": 20000,
+      "llava-v1.6-vicuna-13b-hf": 20000
+    },
+    "validation": {
+      "InternVL3_5-14B-HF": 5000,
+      "Qwen3-VL-8B-Instruct": 5000,
+      "deepseek-vl2": 5000,
+      "gemma-3-27b-it": 5000,
+      "llava-v1.6-vicuna-13b-hf": 5000
+    },
+    "test": {
+      "InternVL3_5-14B-HF": 30514,
+      "Qwen3-VL-8B-Instruct": 30514,
+      "deepseek-vl2": 30514,
+      "gemma-3-27b-it": 30512,
+      "llava-v1.6-vicuna-13b-hf": 30514
+    }
+  },
+  "per_split_model_source": {
+    "test": {
+      "InternVL3_5-14B-HF": {
+        "GMAI-MMBench": 4549,
+        "GQA": 12568,
+        "LLaVA-Wild": 60,
+        "MME-Finance": 892,
+        "MMMU_Pro_10": 1725,
+        "MMMU_Pro_4": 1720,
+        "POPE": 9000
+      },
+      "Qwen3-VL-8B-Instruct": {
+        "GMAI-MMBench": 4549,
+        "GQA": 12568,
+        "LLaVA-Wild": 60,
+        "MME-Finance": 892,
+        "MMMU_Pro_10": 1725,
+        "MMMU_Pro_4": 1720,
+        "POPE": 9000
+      },
+      "deepseek-vl2": {
+        "GMAI-MMBench": 4549,
+        "GQA": 12568,
+        "LLaVA-Wild": 60,
+        "MME-Finance": 892,
+        "MMMU_Pro_10": 1725,
+        "MMMU_Pro_4": 1720,
+        "POPE": 9000
+      },
+      "gemma-3-27b-it": {
+        "GMAI-MMBench": 4549,
+        "GQA": 12568,
+        "LLaVA-Wild": 60,
+        "MME-Finance": 892,
+        "MMMU_Pro_10": 1724,
+        "MMMU_Pro_4": 1719,
+        "POPE": 9000
+      },
+      "llava-v1.6-vicuna-13b-hf": {
+        "GMAI-MMBench": 4549,
+        "GQA": 12568,
+        "LLaVA-Wild": 60,
+        "MME-Finance": 892,
+        "MMMU_Pro_10": 1725,
+        "MMMU_Pro_4": 1720,
+        "POPE": 9000
+      }
+    }
+  },
+  "per_split_model_correctness": {
+    "train": {
+      "InternVL3_5-14B-HF": 15155,
+      "Qwen3-VL-8B-Instruct": 15495,
+      "deepseek-vl2": 12883,
+      "gemma-3-27b-it": 13122,
+      "llava-v1.6-vicuna-13b-hf": 15850
+    },
+    "validation": {
+      "InternVL3_5-14B-HF": 3750,
+      "Qwen3-VL-8B-Instruct": 3785,
+      "deepseek-vl2": 3154,
+      "gemma-3-27b-it": 3244,
+      "llava-v1.6-vicuna-13b-hf": 3847
+    },
+    "test": {
+      "InternVL3_5-14B-HF": 20322,
+      "Qwen3-VL-8B-Instruct": 20457,
+      "deepseek-vl2": 16643,
+      "gemma-3-27b-it": 18737,
+      "llava-v1.6-vicuna-13b-hf": 19212
+    }
+  }
+}

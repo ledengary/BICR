@@ -1,0 +1,29 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "n_total_samples": 30514,
+    "accuracy": 0.4556924690306089,
+    "ece": 0.2682657102909738,
+    "brier": 0.31053630636304996,
+    "precision": 0.7338574774171964,
+    "recall": 0.22607575367173408,
+    "f1": 0.3456644210692196,
+    "sensitivity": 0.22607575367173408,
+    "specificity": 0.8567827887298587,
+    "auroc": 0.5425437042777885,
+    "aucpr": 0.6934113609332664
+  },
+  "metadata": {
+    "model_name": "llava-hf/llava-v1.6-vicuna-13b-hf",
+    "model_name_part": "llava-v1.6-vicuna-13b-hf",
+    "test_dataset_name": "VLMCE_test_raw",
+    "total_records": 30514,
+    "evaluation_timestamp": "2026-04-17T19:36:25.986351",
+    "ptrue_statistics": {
+      "avg_confidence": 0.3676718921210338,
+      "confidence_std": 0.13950080101819204,
+      "min_confidence": 0.026218753308057785,
+      "max_confidence": 0.8107485771179199
+    }
+  }
+}

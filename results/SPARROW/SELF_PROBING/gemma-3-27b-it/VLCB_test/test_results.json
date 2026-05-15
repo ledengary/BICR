@@ -1,0 +1,30 @@
+{
+  "overall": {
+    "n_samples": 29709,
+    "n_total_samples": 30514,
+    "accuracy": 0.6489952539634454,
+    "ece": 0.27454617519943436,
+    "brier": 0.2928168751446276,
+    "precision": 0.6494467595918954,
+    "recall": 0.9642628547045018,
+    "f1": 0.7761463163317878,
+    "sensitivity": 0.9642628547045018,
+    "specificity": 0.10975275978469118,
+    "auroc": 0.6772467894248957,
+    "aucpr": 0.801565323644969
+  },
+  "metadata": {
+    "model_id": "google/gemma-3-27b-it",
+    "model_name_part": "gemma-3-27b-it",
+    "test_dataset_name": "VLMCE_test_raw",
+    "backend": "vllm",
+    "total_records": 29709,
+    "evaluation_timestamp": "2026-04-16T20:17:23.843679",
+    "confidence_statistics": {
+      "avg_confidence": 0.8814437807061832,
+      "confidence_std": 0.21560906722993597,
+      "min_confidence": 0.0,
+      "max_confidence": 1.0
+    }
+  }
+}

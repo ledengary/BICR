@@ -1,0 +1,35 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "accuracy": 0.6413777282558826,
+    "ece": 0.13742537818442058,
+    "brier": 0.2229219309460788,
+    "precision": 0.6742873620036249,
+    "recall": 0.8435454779695954,
+    "f1": 0.7494791785902337,
+    "sensitivity": 0.8435454779695954,
+    "specificity": 0.28823476460527503,
+    "auroc": 0.7069196896444079,
+    "aucpr": 0.8331409105684071
+  },
+  "metadata": {
+    "method": "BICR/no_rank",
+    "model_name": "llava-hf/llava-v1.6-vicuna-13b-hf",
+    "model_name_short": "llava-v1.6-vicuna-13b-hf",
+    "seed": 23,
+    "test_dataset": "VLMCE_test_raw",
+    "checkpoint_dir": "/home/rkhanm1/VLMCE/trained_models/SPARROW/BICR_abl/no_rank/llava-v1.6-vicuna-13b-hf/seed_23/best",
+    "n_parameters": 663809,
+    "classifier_layers": "128,64",
+    "config": {
+      "clf_layers": "128,64",
+      "lr": 0.0005727322213877316,
+      "wd": 2.7701875692609783e-06,
+      "dropout": 0.1,
+      "bb": 0.45820386103291977,
+      "lambda_rank": 0.0,
+      "margin": 0.1
+    },
+    "ablation": "no_rank"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "accuracy": 0.73136920757685,
+    "ece": 0.04896428576951327,
+    "brier": 0.1819004211455583,
+    "precision": 0.7469637193471029,
+    "recall": 0.9210664377354891,
+    "f1": 0.8249289848572222,
+    "sensitivity": 0.9210664377354891,
+    "specificity": 0.3147585628993401,
+    "auroc": 0.7478553675869939,
+    "aucpr": 0.8653066968678842
+  },
+  "metadata": {
+    "model_name": "Qwen/Qwen3-VL-8B-Instruct",
+    "test_dataset_name": "VLMCE_test_raw",
+    "evaluation_timestamp": "2026-04-15T19:24:23"
+  }
+}

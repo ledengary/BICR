@@ -1,0 +1,36 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "accuracy": 0.6914531034934784,
+    "ece": 0.15627894327885844,
+    "brier": 0.22827865372074269,
+    "precision": 0.7057464410822092,
+    "recall": 0.9257466881751968,
+    "f1": 0.8009134930536466,
+    "sensitivity": 0.9257466881751968,
+    "specificity": 0.214875211295615,
+    "auroc": 0.6856076253316209,
+    "aucpr": 0.8149240664437073
+  },
+  "metadata": {
+    "method": "BICR",
+    "model_name": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_name_short": "Qwen3-VL-8B-Instruct",
+    "seed": 3407,
+    "test_dataset": "VLMCE_test_raw",
+    "checkpoint_dir": "/home/rkhanm1/VLMCE/trained_models/SPARROW/BICR_null_ablation/white/Qwen3-VL-8B-Instruct/seed_3407/best",
+    "n_parameters": 2098177,
+    "classifier_layers": "512",
+    "config": {
+      "classifier_layers": "512",
+      "dropout": 0.5,
+      "learning_rate": 0.00011250083000858088,
+      "weight_decay": 0.0001919152632963837,
+      "beta_brier": 0.4293201257051501,
+      "lambda_rank": 0.191225028305482,
+      "margin": 0.24600808093065668
+    },
+    "ablation": null,
+    "label_convention_note": "Bundled labels are in the trained classifier's prediction space (label 1 = the class the model treats as positive). This may be the minority class for methods that learn on imbalanced data. AUROC, Brier, and ECE are invariant under flipping; AUCPR and threshold-dependent metrics depend on the chosen positive class. To re-derive metrics under the canonical '1 = correct' semantics, flip ground_truth_correctness \u2194 1 - ground_truth_correctness and confidence_score \u2194 1 - confidence_score, then recompute via utils.eval.calculate_all_metrics."
+  }
+}

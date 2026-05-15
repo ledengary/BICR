@@ -1,0 +1,170 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "accuracy": 0.6675952022022678,
+    "ece": 0.15876376034059325,
+    "brier": 0.21077940448996707,
+    "precision": 0.664394735888047,
+    "recall": 0.9538829897980429,
+    "f1": 0.7832460732984293,
+    "sensitivity": 0.9538829897980429,
+    "specificity": 0.18094142629623075,
+    "auroc": 0.788809627090041,
+    "aucpr": 0.8782499385068774
+  },
+  "metadata": {
+    "model_name": "llava-hf/llava-v1.6-vicuna-13b-hf",
+    "model_name_part": "llava-v1.6-vicuna-13b-hf",
+    "test_dataset_name": "VLMCE_test_raw",
+    "evaluation_timestamp": "2026-04-12T17:54:07",
+    "ccps_statistics": {
+      "avg_confidence": 0.20285736615214522,
+      "confidence_std": 0.18907903599229978,
+      "min_confidence": 0.0,
+      "max_confidence": 0.81277996301651
+    },
+    "ccps_model_info": {
+      "model_path": "trained_models/SPARROW/CCPS/llava-v1.6-vicuna-13b-hf/seed_23",
+      "feature_dim": 75,
+      "embed_dim": 16,
+      "classifier_hidden_dims": [
+        32
+      ],
+      "max_seq_length": 64,
+      "variant": "paper-fixed (OE, Appendix E)"
+    },
+    "aggregation": "mean of per-sample confidence_score across seeds",
+    "seeds_used": [
+      23,
+      42,
+      137,
+      2024,
+      3407
+    ],
+    "per_seed_metrics": {
+      "23": {
+        "accuracy": 0.6645801926984335,
+        "ece": 0.1673005941283818,
+        "brier": 0.2152084458560754,
+        "precision": 0.6929475587703435,
+        "recall": 0.16952751725358345,
+        "f1": 0.272410606383735,
+        "sensitivity": 0.16952751725358345,
+        "specificity": 0.9558088694565896,
+        "auroc": 0.7869429758276852,
+        "aucpr": 0.6259982573497488
+      },
+      "42": {
+        "accuracy": 0.6602870813397129,
+        "ece": 0.16949835443645814,
+        "brier": 0.21399109692206078,
+        "precision": 0.7106210621062106,
+        "recall": 0.13970978587860555,
+        "f1": 0.23351079562259686,
+        "sensitivity": 0.13970978587860555,
+        "specificity": 0.9665313345825526,
+        "auroc": 0.791281121377827,
+        "aucpr": 0.6322923031262255
+      },
+      "137": {
+        "accuracy": 0.6651045421773613,
+        "ece": 0.1567297069026735,
+        "brier": 0.21173037127477445,
+        "precision": 0.6888733868154866,
+        "recall": 0.17474783224208104,
+        "f1": 0.278777613099019,
+        "sensitivity": 0.17474783224208104,
+        "specificity": 0.9535706849885488,
+        "auroc": 0.78382584113119,
+        "aucpr": 0.6222598661231182
+      },
+      "2024": {
+        "accuracy": 0.6713967359244937,
+        "ece": 0.15163786974427781,
+        "brier": 0.2093280908092156,
+        "precision": 0.6830318690783808,
+        "recall": 0.2104937179260308,
+        "f1": 0.32181264795400744,
+        "sensitivity": 0.2104937179260308,
+        "specificity": 0.9425359150530919,
+        "auroc": 0.7853617703874911,
+        "aucpr": 0.6224872587691119
+      },
+      "3407": {
+        "accuracy": 0.6714622796093597,
+        "ece": 0.14818548963634992,
+        "brier": 0.20578536657510554,
+        "precision": 0.6848046309696093,
+        "recall": 0.20934347903026013,
+        "f1": 0.3206613810395067,
+        "sensitivity": 0.20934347903026013,
+        "specificity": 0.943316677076827,
+        "auroc": 0.7914684319579506,
+        "aucpr": 0.6297969992756468
+      }
+    },
+    "per_seed_stats": {
+      "auroc": {
+        "mean": 0.7877760281364289,
+        "std": 0.0034657653778007707,
+        "min": 0.78382584113119,
+        "max": 0.7914684319579506
+      },
+      "aucpr": {
+        "mean": 0.6265669369287703,
+        "std": 0.004436528770744147,
+        "min": 0.6222598661231182,
+        "max": 0.6322923031262255
+      },
+      "ece": {
+        "mean": 0.15867040296962825,
+        "std": 0.00941914227518834,
+        "min": 0.14818548963634992,
+        "max": 0.16949835443645814
+      },
+      "brier": {
+        "mean": 0.21120867428744633,
+        "std": 0.003773628122468646,
+        "min": 0.20578536657510554,
+        "max": 0.2152084458560754
+      },
+      "accuracy": {
+        "mean": 0.6665661663498723,
+        "std": 0.004816992645719726,
+        "min": 0.6602870813397129,
+        "max": 0.6714622796093597
+      },
+      "precision": {
+        "mean": 0.6920557015480061,
+        "std": 0.011063484148209554,
+        "min": 0.6830318690783808,
+        "max": 0.7106210621062106
+      },
+      "recall": {
+        "mean": 0.1807644664661122,
+        "std": 0.02978482862398962,
+        "min": 0.13970978587860555,
+        "max": 0.2104937179260308
+      },
+      "f1": {
+        "mean": 0.285434608819773,
+        "std": 0.0369942894940834,
+        "min": 0.23351079562259686,
+        "max": 0.32181264795400744
+      },
+      "sensitivity": {
+        "mean": 0.1807644664661122,
+        "std": 0.02978482862398962,
+        "min": 0.13970978587860555,
+        "max": 0.2104937179260308
+      },
+      "specificity": {
+        "mean": 0.952352696231522,
+        "std": 0.009905569775793169,
+        "min": 0.9425359150530919,
+        "max": 0.9665313345825526
+      }
+    },
+    "label_convention_note": "Bundled labels are in the trained classifier's prediction space (label 1 = the class the model treats as positive). This may be the minority class for methods that learn on imbalanced data. AUROC, Brier, and ECE are invariant under flipping; AUCPR and threshold-dependent metrics depend on the chosen positive class. To re-derive metrics under the canonical '1 = correct' semantics, flip ground_truth_correctness \u2194 1 - ground_truth_correctness and confidence_score \u2194 1 - confidence_score, then recompute via utils.eval.calculate_all_metrics."
+  }
+}

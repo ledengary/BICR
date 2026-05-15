@@ -1,0 +1,38 @@
+{
+  "overall": {
+    "n_samples": 30512,
+    "accuracy": 0.6662296801258522,
+    "ece": 0.10447992499259282,
+    "brier": 0.22594773343927357,
+    "precision": 0.6837561156107388,
+    "recall": 0.8696857187679757,
+    "f1": 0.765594070800534,
+    "sensitivity": 0.8696857187679757,
+    "specificity": 0.324611467205198,
+    "auroc": 0.6695833889502759,
+    "aucpr": 0.7066526120849087
+  },
+  "metadata": {
+    "model_name": "google/gemma-3-27b-it",
+    "model_name_part": "gemma-3-27b-it",
+    "test_dataset_name": "VLMCE_test_raw",
+    "evaluation_timestamp": "2026-04-16T04:33:58",
+    "ccps_statistics": {
+      "avg_confidence": 0.279215092551869,
+      "confidence_std": 0.21260749424797132,
+      "min_confidence": 2.3168489860836416e-05,
+      "max_confidence": 0.9649599194526672
+    },
+    "ccps_model_info": {
+      "model_path": "trained_models/SPARROW/CCPS/gemma-3-27b-it/seed_3407",
+      "feature_dim": 75,
+      "embed_dim": 16,
+      "classifier_hidden_dims": [
+        32
+      ],
+      "max_seq_length": 64,
+      "variant": "paper-fixed (OE, Appendix E)"
+    },
+    "label_convention_note": "Bundled labels are in the trained classifier's prediction space (label 1 = the class the model treats as positive). This may be the minority class for methods that learn on imbalanced data. AUROC, Brier, and ECE are invariant under flipping; AUCPR and threshold-dependent metrics depend on the chosen positive class. To re-derive metrics under the canonical '1 = correct' semantics, flip ground_truth_correctness \u2194 1 - ground_truth_correctness and confidence_score \u2194 1 - confidence_score, then recompute via utils.eval.calculate_all_metrics."
+  }
+}

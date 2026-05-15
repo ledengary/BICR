@@ -1,0 +1,20 @@
+{
+  "overall": {
+    "n_samples": 30504,
+    "accuracy": 0.6962693417256753,
+    "ece": 0.022785735337633443,
+    "brier": 0.192646576391481,
+    "precision": 0.7154787931788369,
+    "recall": 0.8557606819727002,
+    "f1": 0.7793574813650544,
+    "sensitivity": 0.8557606819727002,
+    "specificity": 0.42835807783536856,
+    "auroc": 0.7509436533503951,
+    "aucpr": 0.8322242493827801
+  },
+  "metadata": {
+    "model_name": "google/gemma-3-27b-it",
+    "test_dataset_name": "VLMCE_test_raw",
+    "evaluation_timestamp": "2026-04-15T19:48:38"
+  }
+}

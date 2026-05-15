@@ -1,0 +1,35 @@
+{
+  "overall": {
+    "n_samples": 30513,
+    "accuracy": 0.7107790122242978,
+    "ece": 0.07236061731912387,
+    "brier": 0.18640053051478586,
+    "precision": 0.7821367358598362,
+    "recall": 0.7945059728200415,
+    "f1": 0.7882728341450541,
+    "sensitivity": 0.7945059728200415,
+    "specificity": 0.5347702318015454,
+    "auroc": 0.7665033482419216,
+    "aucpr": 0.8814473746729736
+  },
+  "metadata": {
+    "method": "BICR",
+    "model_name": "OpenGVLab/InternVL3_5-14B-HF",
+    "model_name_short": "InternVL3_5-14B-HF",
+    "seed": 23,
+    "test_dataset": "VLMCE_test_raw",
+    "checkpoint_dir": "/home/rkhanm1/VLMCE/trained_models/SPARROW/BICR/InternVL3_5-14B-HF/seed_23/best",
+    "n_parameters": 2753537,
+    "classifier_layers": "512,256",
+    "config": {
+      "clf_layers": "512,256",
+      "lr": 0.00030063149320161853,
+      "wd": 0.0005302479289784799,
+      "dropout": 0.1,
+      "bb": 0.19469185787048968,
+      "lambda_rank": 0.05650438463293754,
+      "margin": 0.18907905065534333
+    },
+    "ablation": null
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "overall": {
+    "n_samples": 30513,
+    "accuracy": 0.6995379018778881,
+    "ece": 0.1812848880086272,
+    "brier": 0.2387233311961557,
+    "precision": 0.7133429726022319,
+    "recall": 0.9305508536054553,
+    "f1": 0.8075970619097587,
+    "sensitivity": 0.9305508536054553,
+    "specificity": 0.21390809272061814,
+    "auroc": 0.6492617683208666,
+    "aucpr": 0.7574123277183404
+  },
+  "metadata": {
+    "model_name": "OpenGVLab/InternVL3_5-14B-HF",
+    "test_dataset_name": "VLMCE_test_raw",
+    "evaluation_timestamp": "2026-04-15T19:44:18"
+  }
+}

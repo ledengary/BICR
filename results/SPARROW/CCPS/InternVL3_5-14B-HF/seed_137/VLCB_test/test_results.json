@@ -1,0 +1,38 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "accuracy": 0.6757226191256472,
+    "ece": 0.15048867682227723,
+    "brier": 0.2336504019093513,
+    "precision": 0.6865139773041794,
+    "recall": 0.9596653286260096,
+    "f1": 0.80042758314677,
+    "sensitivity": 0.9596653286260096,
+    "specificity": 0.07888583917861136,
+    "auroc": 0.6278686056139655,
+    "aucpr": 0.7751711646453379
+  },
+  "metadata": {
+    "model_name": "OpenGVLab/InternVL3_5-14B-HF",
+    "model_name_part": "InternVL3_5-14B-HF",
+    "test_dataset_name": "VLMCE_test_raw",
+    "evaluation_timestamp": "2026-04-16T03:43:16",
+    "ccps_statistics": {
+      "avg_confidence": 0.18887105342346833,
+      "confidence_std": 0.15024183415935152,
+      "min_confidence": 0.012458732351660728,
+      "max_confidence": 0.9266722798347473
+    },
+    "ccps_model_info": {
+      "model_path": "trained_models/SPARROW/CCPS/InternVL3_5-14B-HF/seed_137",
+      "feature_dim": 75,
+      "embed_dim": 16,
+      "classifier_hidden_dims": [
+        32
+      ],
+      "max_seq_length": 64,
+      "variant": "paper-fixed (OE, Appendix E)"
+    },
+    "label_convention_note": "Bundled labels are in the trained classifier's prediction space (label 1 = the class the model treats as positive). This may be the minority class for methods that learn on imbalanced data. AUROC, Brier, and ECE are invariant under flipping; AUCPR and threshold-dependent metrics depend on the chosen positive class. To re-derive metrics under the canonical '1 = correct' semantics, flip ground_truth_correctness \u2194 1 - ground_truth_correctness and confidence_score \u2194 1 - confidence_score, then recompute via utils.eval.calculate_all_metrics."
+  }
+}

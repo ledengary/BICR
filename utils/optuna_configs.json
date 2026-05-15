@@ -1,0 +1,150 @@
+{
+  "shared_classifier_space": {
+    "classifier_layers": [
+      "0", 
+      "256", 
+      "512", 
+      "256,128", 
+      "512,256", 
+      "1024,512", 
+      "1024,512,256"
+    ],
+    "classifier_dropout": [0.0, 0.1, 0.3, 0.5]
+  },
+  "budget_constraints": { "min_params": 1, "max_params": 5000000 },
+
+  "methods": {
+    "PIK": {
+      "learning_rate": [1e-5, 1e-3],
+      "weight_decay": [1e-6, 1e-3]
+    },
+    "SAPLMA": {
+      "learning_rate": [1e-5, 1e-3],
+      "weight_decay": [1e-6, 1e-3]
+    },
+    "CCPS_proj": {
+      "learning_rate": [1e-4, 1e-2],
+      "weight_decay": [1e-5, 1e-2],
+      "encoder_dropout": [0.1, 0.2, 0.3],
+      "embed_dim": [8, 16, 32, 64],
+      "hidden_dims": ["64,32", "64,64", "128,64", "128,64,32"],
+      "kernel_sizes": ["3,3", "3,3,3", "5,3", "5,3,3"],
+      "contrastive_margin": [0.5, 1.0, 1.5]
+    },
+    "CCPS_clf": {
+      "learning_rate": [1e-4, 1e-2],
+      "weight_decay": [1e-5, 1e-2],
+      "classifier_dropout": [0.1, 0.25, 0.4],
+      "classifier_hidden_dims": ["0", "32", "64", "64,32"]
+    },
+    "AttentionCLF": {
+      "learning_rate": [1e-4, 1e-3],
+      "weight_decay": [1e-5, 1e-4],
+      "classifier_dropout": [0.1, 0.25, 0.4],
+      "cnn_channels": ["16,32", "32,64", "32,64,128", "16,32,64"],
+      "use_shared_classifier": true
+    },
+    "VEP": {
+      "learning_rate": [1e-4, 1e-3],
+      "weight_decay": [1e-5, 1e-4],
+      "classifier_dropout": [0.1, 0.25, 0.4],
+      "pooling_methods": ["mean", "attention", "max"],
+      "use_shared_classifier": true
+    },
+    "FIN_pretrain": {
+      "hidden_layers": ["128,64", "256,128", "256,128,64", "128,64,32"],
+      "dropout": [0.0, 0.1, 0.2],
+      "learning_rate": [1e-4, 1e-2],
+      "batch_size": 256,
+      "max_epochs": 100,
+      "early_stopping_patience": 10
+    },
+    "FIN_finetune": {
+      "learning_rate": [1e-4, 1e-3],
+      "weight_decay": [1e-5, 1e-4],
+      "freeze_features": [false, true],
+      "max_epochs": 200,
+      "early_stopping_patience": 20
+    },
+    "LogisticRegression": { "C": [0.001, 100.0], "max_iter": [200, 1000] },
+    "SVM": { "C": [0.01, 100.0], "gamma": ["scale", "auto", 0.001, 0.01, 0.1, 1.0] },
+    "RandomForest": {
+      "n_estimators": [50, 500],
+      "max_depth": [3, 20],
+      "min_samples_split": [2, 20],
+      "min_samples_leaf": [1, 10],
+      "max_features": ["sqrt", "log2", 0.5, 0.7, 0.9]
+    },
+    "XGBoost": {
+      "n_estimators": [50, 500],
+      "max_depth": [3, 15],
+      "learning_rate": [0.001, 0.3],
+      "subsample": [0.6, 1.0],
+      "colsample_bytree": [0.6, 1.0],
+      "reg_alpha": [1e-5, 10.0],
+      "reg_lambda": [1e-5, 10.0]
+    },
+    "MLP": {
+      "hidden_layer_sizes": ["64", "128", "64,32", "128,64", "128,64,32", "256,128"],
+      "alpha": [1e-5, 1e-1],
+      "learning_rate_init": [1e-4, 1e-2]
+    },
+    "Gating": {
+      "learning_rate": [1e-4, 1e-3],
+      "weight_decay": [1e-5, 1e-4],
+      "alpha_init": [0.1, 10.0],
+      "batch_size": [64, 128, 256]
+    },
+    "MAP": {
+      "learning_rate": [1e-4, 1e-3],
+      "weight_decay": [1e-5, 1e-4],
+      "classifier_dropout": [0.1, 0.25, 0.4],
+      "hidden_layer_sizes": ["64", "128", "64,32", "128,64", "128,64,32", "256,128"]
+    },
+    "CT": {
+      "learning_rate": [1e-5, 1e-3],
+      "lora_rank": [4, 8, 16, 32],
+      "lora_alpha": [8, 16, 32, 64],
+      "lora_dropout": [0.0, 0.05, 0.1]
+    },
+    "VC": {
+      "learning_rate": [0.0001, 0.001],
+      "weight_decay": [0.00001, 0.0001],
+      "classifier_dropout": [0.1, 0.25, 0.4]
+    },
+    "ICC": {
+      "d_hidden": [256, 768],
+      "d_proj": [128, 384],
+
+      "learning_rate": [1e-5, 5e-4],
+      "weight_decay": [1e-6, 1e-3],
+      "dropout": [0.0, 0.5],
+
+      "lambda_inv": [0.05, 0.5],
+      "lambda_rank": [0.1, 1.0],
+      "lambda_contrast": [0.1, 0.7],
+
+      "margin": [0.05, 0.3],
+      "temperature": [0.03, 0.1],
+
+      "beta_brier": [0.0, 0.2]
+    },
+    "II": {
+      "learning_rate": [1e-5, 1e-3],
+      "weight_decay": [1e-6, 1e-3],
+      "base_channels": [16, 32, 48, 64],
+      "num_stages": [2, 3, 4],
+      "blocks_per_stage": [1, 2],
+      "embed_dim": [64, 128, 256],
+      "contrastive_temp": [0.05, 0.2]
+    },
+    "ICC3": {
+      "learning_rate": [1e-5, 5e-4],
+      "weight_decay": [1e-6, 1e-3],
+      "lambda_inv": [0.01, 0.2],
+      "lambda_rank": [0.01, 0.2],
+      "margin": [0.05, 0.2],
+      "beta_brier": [0.0, 0.2]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "accuracy": 0.7406764108278168,
+    "ece": 0.04833302416623775,
+    "brier": 0.17668664406751006,
+    "precision": 0.7977173548170527,
+    "recall": 0.7080204981527828,
+    "f1": 0.7501973040376299,
+    "sensitivity": 0.7080204981527828,
+    "specificity": 0.780585493737256,
+    "auroc": 0.8122963271267403,
+    "aucpr": 0.8626044209087245
+  },
+  "metadata": {
+    "method": "BICR",
+    "model_name": "deepseek-ai/deepseek-vl2",
+    "model_name_short": "deepseek-vl2",
+    "seed": 3407,
+    "test_dataset": "VLMCE_test_raw",
+    "checkpoint_dir": "/home/rkhanm1/VLMCE/trained_models/SPARROW/BICR/deepseek-vl2/seed_3407/best",
+    "n_parameters": 1442817,
+    "classifier_layers": "512,256",
+    "config": {
+      "clf_layers": "512,256",
+      "lr": 0.0008855415365607906,
+      "wd": 0.0006606743699394086,
+      "dropout": 0.2,
+      "bb": 0.10644079736709841,
+      "lambda_rank": 0.21179147212164984,
+      "margin": 0.1891828580026746
+    },
+    "ablation": null
+  }
+}

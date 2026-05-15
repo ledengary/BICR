@@ -1,0 +1,27 @@
+{
+  "overall": {
+    "n_samples": 30509,
+    "accuracy": 0.484906093283949,
+    "ece": 0.33238122809911597,
+    "brier": 0.3662284861018056,
+    "precision": 0.527872284742214,
+    "recall": 0.6010131108462455,
+    "f1": 0.5620732896753519,
+    "sensitivity": 0.6010131108462455,
+    "specificity": 0.3429965765897006,
+    "auroc": 0.5324687868723288,
+    "aucpr": 0.6893876071793674
+  },
+  "metadata": {
+    "model_name_part": "deepseek-vl2",
+    "test_dataset_name": "VLMCE_test_raw",
+    "total_records": 30509,
+    "evaluation_timestamp": "2026-04-17T19:38:05.804340",
+    "ptrue_statistics": {
+      "avg_confidence": 0.5477701648311669,
+      "confidence_std": 0.33992389891695696,
+      "min_confidence": 0.0003072042600251734,
+      "max_confidence": 0.9994785189628601
+    }
+  }
+}

@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+title: "BICR — Grounded or Guessing? LVLM Confidence Estimation via Blind-Image Contrastive Ranking"
+message: "If you use this code or the associated VLCB benchmark, please cite the following preprint."
+type: software
+authors:
+  - family-names: Khanmohammadi
+    given-names: Reza
+  - family-names: Miahi
+    given-names: Erfan
+  - family-names: Kaur
+    given-names: Simerjot
+  - family-names: Smiley
+    given-names: Charese H.
+  - family-names: Brugere
+    given-names: Ivan
+  - family-names: Thind
+    given-names: Kundan
+  - family-names: Ghassemi
+    given-names: Mohammad M.
+year: 2026
+preferred-citation:
+  type: article
+  title: "Grounded or Guessing? LVLM Confidence Estimation via Blind-Image Contrastive Ranking"
+  year: 2026
+  url: "https://arxiv.org/abs/2605.10893"
+  authors:
+    - family-names: Khanmohammadi
+      given-names: Reza
+    - family-names: Miahi
+      given-names: Erfan
+    - family-names: Kaur
+      given-names: Simerjot
+    - family-names: Smiley
+      given-names: Charese H.
+    - family-names: Brugere
+      given-names: Ivan
+    - family-names: Thind
+      given-names: Kundan
+    - family-names: Ghassemi
+      given-names: Mohammad M.

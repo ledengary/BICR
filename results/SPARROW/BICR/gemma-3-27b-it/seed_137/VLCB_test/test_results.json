@@ -1,0 +1,35 @@
+{
+  "overall": {
+    "n_samples": 30504,
+    "accuracy": 0.6969577760293731,
+    "ece": 0.05169641707221852,
+    "brier": 0.19133395063197445,
+    "precision": 0.765296803652968,
+    "recall": 0.7450447152345588,
+    "f1": 0.7550349798600806,
+    "sensitivity": 0.7450447152345588,
+    "specificity": 0.6161820258279891,
+    "auroc": 0.7669910956015245,
+    "aucpr": 0.8522743015306389
+  },
+  "metadata": {
+    "method": "BICR",
+    "model_name": "google/gemma-3-27b-it",
+    "model_name_short": "gemma-3-27b-it",
+    "seed": 137,
+    "test_dataset": "VLMCE_test_raw",
+    "checkpoint_dir": "/home/rkhanm1/VLMCE/trained_models/SPARROW/BICR/gemma-3-27b-it/seed_137/best",
+    "n_parameters": 696577,
+    "classifier_layers": "128,64",
+    "config": {
+      "clf_layers": "128,64",
+      "lr": 4.530003174293125e-05,
+      "wd": 1.533759212693749e-06,
+      "dropout": 0.2,
+      "bb": 0.3227113357145685,
+      "lambda_rank": 0.1309231542034576,
+      "margin": 0.2104225162399279
+    },
+    "ablation": null
+  }
+}

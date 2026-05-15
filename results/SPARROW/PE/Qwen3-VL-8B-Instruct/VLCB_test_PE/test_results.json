@@ -1,0 +1,38 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "n_total_samples": 30514,
+    "accuracy": 0.6871272202923249,
+    "ece": 0.18410168618032352,
+    "brier": 0.24844506459674415,
+    "precision": 0.6871272202923249,
+    "recall": 1.0,
+    "f1": 0.8145529418620462,
+    "sensitivity": 1.0,
+    "specificity": 0.0,
+    "auroc": 0.5427389279204151,
+    "aucpr": 0.6894402793790662
+  },
+  "metadata": {
+    "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_name_part": "Qwen3-VL-8B-Instruct",
+    "test_dataset_name": "VLMCE_test_raw_PE",
+    "backend": "vllm",
+    "num_paraphrases_used": null,
+    "confidence_aggregation": "mean",
+    "total_records": 30514,
+    "evaluation_timestamp": "2026-04-16T17:12:25.898029",
+    "ensemble_confidence_statistics": {
+      "avg_confidence": 0.8712289064726484,
+      "confidence_std": 0.03314377447968245,
+      "min_confidence": 0.711033772571351,
+      "max_confidence": 0.9999997742248304
+    },
+    "original_confidence_statistics": {
+      "avg_confidence": 0.8712596070683689,
+      "confidence_std": 0.042627845092545816,
+      "min_confidence": 0.49241995685730344,
+      "max_confidence": 1.0
+    }
+  }
+}

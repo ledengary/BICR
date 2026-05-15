@@ -1,0 +1,37 @@
+{
+  "overall": {
+    "n_samples": 30504,
+    "n_total_samples": 30504,
+    "accuracy": 0.6790584841332284,
+    "ece": 0.10408864628098272,
+    "brier": 0.20923740372635025,
+    "precision": 0.689231393226526,
+    "recall": 0.888708749542388,
+    "f1": 0.7763614766081871,
+    "sensitivity": 0.888708749542388,
+    "specificity": 0.3268909777738733,
+    "auroc": 0.7406355383407167,
+    "aucpr": 0.8344919770022079
+  },
+  "metadata": {
+    "model_name": "google/gemma-3-27b-it",
+    "model_name_part": "gemma-3-27b-it",
+    "test_dataset_name": "VLMCE_test_raw",
+    "total_records": 30504,
+    "evaluation_timestamp": "2026-04-15T19:05:24",
+    "pik_statistics": {
+      "avg_confidence": 0.2803782522678375,
+      "confidence_std": 0.23306067287921906,
+      "min_confidence": 0.0007874727016314864,
+      "max_confidence": 0.9917491674423218
+    },
+    "pik_model_info": {
+      "model_path": "trained_models/SPARROW/PIK_t50/gemma-3-27b-it/seed_23",
+      "input_dim": 5376,
+      "hidden_layers": [
+        512
+      ]
+    },
+    "label_convention_note": "Bundled labels are in the trained classifier's prediction space (label 1 = the class the model treats as positive). This may be the minority class for methods that learn on imbalanced data. AUROC, Brier, and ECE are invariant under flipping; AUCPR and threshold-dependent metrics depend on the chosen positive class. To re-derive metrics under the canonical '1 = correct' semantics, flip ground_truth_correctness \u2194 1 - ground_truth_correctness and confidence_score \u2194 1 - confidence_score, then recompute via utils.eval.calculate_all_metrics."
+  }
+}

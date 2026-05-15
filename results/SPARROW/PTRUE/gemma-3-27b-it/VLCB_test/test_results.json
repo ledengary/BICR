@@ -1,0 +1,27 @@
+{
+  "overall": {
+    "n_samples": 30504,
+    "accuracy": 0.543010752688172,
+    "ece": 0.44649355287616943,
+    "brier": 0.44928161443008835,
+    "precision": 0.6235984541247197,
+    "recall": 0.6835416557711417,
+    "f1": 0.6521956087824351,
+    "sensitivity": 0.6835416557711417,
+    "specificity": 0.30694895897390845,
+    "auroc": 0.5675127810337328,
+    "aucpr": 0.7517730263768756
+  },
+  "metadata": {
+    "model_name_part": "gemma-3-27b-it",
+    "test_dataset_name": "VLMCE_test_raw",
+    "total_records": 30504,
+    "evaluation_timestamp": "2026-04-17T19:38:05.930713",
+    "ptrue_statistics": {
+      "avg_confidence": 0.6869088877533726,
+      "confidence_std": 0.4554260731478968,
+      "min_confidence": 7.829739523401713e-09,
+      "max_confidence": 1.0
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "overall": {
+    "n_samples": 30514,
+    "accuracy": 0.7055777675820935,
+    "ece": 0.04638367524276424,
+    "brier": 0.17735838908239307,
+    "precision": 0.7727500341421223,
+    "recall": 0.8096055706586541,
+    "f1": 0.7907485908603904,
+    "sensitivity": 0.8096055706586541,
+    "specificity": 0.4771132292866869,
+    "auroc": 0.7669823907244866,
+    "aucpr": 0.8855462213206411
+  },
+  "metadata": {
+    "method": "BICR/no_rank",
+    "model_name": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_name_short": "Qwen3-VL-8B-Instruct",
+    "seed": 42,
+    "test_dataset": "VLMCE_test_raw",
+    "checkpoint_dir": "/home/rkhanm1/VLMCE/trained_models/SPARROW/BICR_abl/no_rank/Qwen3-VL-8B-Instruct/seed_42/best",
+    "n_parameters": 532737,
+    "classifier_layers": "128,64",
+    "config": {
+      "clf_layers": "128,64",
+      "lr": 0.0003324841810614687,
+      "wd": 0.0004194646212457391,
+      "dropout": 0.2,
+      "bb": 0.27528472290015976,
+      "lambda_rank": 0.0,
+      "margin": 0.1
+    },
+    "ablation": "no_rank"
+  }
+}

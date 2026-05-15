@@ -1,0 +1,20 @@
+{
+  "overall": {
+    "n_samples": 30513,
+    "accuracy": 0.6842657228066725,
+    "ece": 0.10149738534249259,
+    "brier": 0.21393339428329453,
+    "precision": 0.6681884501341366,
+    "recall": 0.8460163279899887,
+    "f1": 0.7466603555275061,
+    "sensitivity": 0.8460163279899887,
+    "specificity": 0.4866006408389164,
+    "auroc": 0.7485745499245408,
+    "aucpr": 0.7629930641256487
+  },
+  "metadata": {
+    "model_name": "deepseek-ai/deepseek-vl2",
+    "test_dataset_name": "VLMCE_test_raw",
+    "evaluation_timestamp": "2026-04-15T19:56:17"
+  }
+}
